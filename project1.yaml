@@ -27,13 +27,13 @@ spec:
 
   # Allow all namespaced-scoped resources to be created, except for 
   # ResourceQuota, LimitRange, NetworkPolicy
-  namespaceResourceBlacklist:
-  - group: ''
-    kind: ResourceQuota
-  - group: ''
-    kind: LimitRange
-  - group: ''
-    kind: NetworkPolicy
+  # namespaceResourceBlacklist:
+  # - group: ''
+  #   kind: ResourceQuota
+  # - group: ''
+  #   kind: LimitRange
+  # - group: ''
+  #   kind: NetworkPolicy
 
   # Deny all namespaced-scoped resources 
   # from being created, except for Deployment and StatefulSet
@@ -42,6 +42,8 @@ spec:
     kind: Deployment
   - group: ''
     kind: StatefulSet
+  - group: ''
+    kind: Service
 
   # roles:
   # # A role which provides read-only access to all applications in the project

@@ -38,11 +38,11 @@ spec:
   # Deny all namespaced-scoped resources 
   # from being created, except for Deployment and StatefulSet
   namespaceResourceWhitelist:
-  - group: ''
+  - group: 'apps'
     kind: Deployment
-  - group: ''
+  - group: 'apps'
     kind: StatefulSet
-  - group: ''
+  - group: 'apps'
     kind: Service
 
   # roles:

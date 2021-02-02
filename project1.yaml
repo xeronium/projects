@@ -42,7 +42,7 @@ spec:
     kind: Deployment
   - group: 'apps'
     kind: StatefulSet
-  - group: 'apps'
+  - group: ''
     kind: Service
 
   # roles:
